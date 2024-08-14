@@ -43,9 +43,9 @@
 tamanho_da_lista = int(input('Digite o valor das listas: '))
 primeira_lista = []
 primeiro_valor_boolean = False
-outro_valor_boolean = True
 primeiro_valor_numerico = 0
 elemento_desejado_cert = ['boolean', 'string', 'numero']
+
 for i in range(tamanho_da_lista):
     if i == 0:
         primeiro_valor = input('Digite o primeiro valor string: ')
@@ -71,4 +71,41 @@ for i in range(tamanho_da_lista):
         else:
             outro_valor_numerico = int(input('Digite outro valor numerico: '))
             primeira_lista += [outro_valor_numerico]
-print(primeira_lista)
+
+segunda_lista = []
+segundo_valor_boolean = False
+segundo_valor_numerico = 0
+
+
+for k in range(tamanho_da_lista):
+    if k == 0:
+        segundo_valor = input('Digite o primeiro valor string: ')
+        segunda_lista += [segundo_valor]
+    elif k == 1:
+        segundo_valor_boolean = bool(input('Digite o primeiro valor boolean: '))
+        segunda_lista += [segundo_valor_boolean]
+    elif k == 2:
+        segundo_valor_numerico = int(input('Digite o primeiro valor numerico: '))
+        segunda_lista += [segundo_valor_numerico]
+    else:
+        segundo_outro_valor_numerico = 0
+        elemento_desejado = input('Digite o tipo de elemento desejado: ')
+        while elemento_desejado not in elemento_desejado_cert:
+            print('Elemento inválido.')
+            elemento_desejado = input('Digite outro tipo de elemento desejado: ')
+        if elemento_desejado == elemento_desejado_cert[0]:
+            segundo_outro_valor_boolean = bool(input('Digite outro valor boolean: '))
+            segunda_lista += [segundo_outro_valor_boolean]
+        elif elemento_desejado == elemento_desejado_cert[1]:
+            segundo_outro_valor_string = input('Digite outro valor string: ')
+            segunda_lista += [segundo_outro_valor_string]
+        else:
+            segundo_outro_valor_numerico = int(input('Digite outro valor numerico: '))
+            segunda_lista += [segundo_outro_valor_numerico]
+
+lista_resultante = []
+total_de_elementos = len(primeira_lista) + len(segunda_lista)
+for n in range(total_de_elementos):
+    lista_resultante += [primeira_lista[n]]
+    lista_resultante += [segunda_lista[n]]
+print(lista_resultante)
