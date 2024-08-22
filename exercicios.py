@@ -53,6 +53,18 @@
 # else:
 #     print('Soma listaimpar2 > Soma listaimpar1')
 
+#questão 03
+# lista_usuario = []
+# soma_par = 0
+
+# for _ in range(10):
+#     valor = int(input("Digite os valores da lista: "))
+#     lista_usuario += [valor]
+# for elemento in lista_usuario:
+#     if elemento % 2 == 0 and elemento != 0:
+#         soma_par += 1
+
+# print(f"Quantidade de valores par: {soma_par}")
 
 
 # Questão 04
