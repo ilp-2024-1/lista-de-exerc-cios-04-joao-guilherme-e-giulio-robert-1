@@ -1,3 +1,17 @@
+#QUestão 01
+
+# lista_usuario = []
+# soma_par = 0
+
+# for _ in range(10):
+#     valor = int(input("Digite os valores da lista: "))
+#     lista_usuario += [valor]
+
+# for elementos in lista_usuario:
+#     if elementos % 2 == 0:
+#         soma_par += 1
+# print(f"Qtd valores par: {soma_par}")
+
 # Questão 02
 
 # tamanho_da_lista = int(input('Digite o tamanho das listas: '))
@@ -38,6 +52,8 @@
 #     print('Soma listaimpar1 = Soma listaimpar2')
 # else:
 #     print('Soma listaimpar2 > Soma listaimpar1')
+
+
 
 # Questão 04
 # tamanho_da_lista = int(input('Digite o valor das listas: '))
